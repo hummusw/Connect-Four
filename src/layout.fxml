@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+// File:          layout.fxml
+// Description:   Layout for Connect Four visuals
+// Author:        Thomas Wang
+// Last modified: 01 Jun 2020
+// Changelist:
+//   01 Jun 2020: Renamed (sample.fxml -> layout.fxml)
+//   31 May 2020: Creation, added grid, hover row, column numbers
+// References:
+-->
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="col1" alignment="CENTER" onMouseClicked="#columnSelect" onMouseEntered="#columnEnter" onMouseExited="#columnLeave" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/emptyHover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Column 1" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox fx:id="col2" alignment="CENTER" onMouseClicked="#columnSelect" onMouseEntered="#columnEnter" onMouseExited="#columnLeave" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/emptyHover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Column 2" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox fx:id="col3" alignment="CENTER" onMouseClicked="#columnSelect" onMouseEntered="#columnEnter" onMouseExited="#columnLeave" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/emptyHover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Column 3" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox fx:id="col4" alignment="CENTER" onMouseClicked="#columnSelect" onMouseEntered="#columnEnter" onMouseExited="#columnLeave" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/emptyHover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Column 4" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox fx:id="col5" alignment="CENTER" onMouseClicked="#columnSelect" onMouseEntered="#columnEnter" onMouseExited="#columnLeave" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/emptyHover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Column 5" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox fx:id="col6" alignment="CENTER" onMouseClicked="#columnSelect" onMouseEntered="#columnEnter" onMouseExited="#columnLeave" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/emptyHover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Column 6" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox fx:id="col7" alignment="CENTER" onMouseClicked="#columnSelect" onMouseEntered="#columnEnter" onMouseExited="#columnLeave" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/emptyHover.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image requestedHeight="200" requestedWidth="200" smooth="true" url="@images/empty.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minWidth="-Infinity" text="Column 7" textAlignment="CENTER" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <right>
+      <VBox alignment="TOP_CENTER" onMouseClicked="#requestFocus" prefHeight="200.0" prefWidth="100.0" spacing="8.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+         <children>
+            <Label text="Red Player" />
+            <TextField text="Alice" />
+            <Label layoutX="10.0" layoutY="52.0" text="Yellow Player">
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin></Label>
+            <TextField layoutX="10.0" layoutY="27.0" text="Bob" />
+            <Label text="Starting player:">
+               <VBox.margin>
+                  <Insets top="32.0" />
+               </VBox.margin></Label>
+            <ChoiceBox fx:id="startingPlayerChoice" prefWidth="150.0" value="Random">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Red" />
+                     <String fx:value="Yellow" />
+                     <String fx:value="Random" />
+                     <String fx:value="Switch" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <Button fx:id="newGameButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#newGame" text="New Game">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="undoButton" disable="true" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#undoMove" text="Undo Move">
+               <VBox.margin>
+                  <Insets top="32.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
